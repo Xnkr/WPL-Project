@@ -25,8 +25,8 @@
     "nodemon": "^2.0.2"
   },
   "scripts": {
-    "start": "nodemon --watch backend --exec babel-node backend/server.js",
-    "build": "rm -rf dist && babel backend -d dist  && cd frontend && npm install && npm run build"
+    "start": "nodemon --watch . --exec babel-node server.js",
+    "build": "rm -rf dist && babel . -d dist  && cd frontend && npm install && npm run build"
   },
   "engines": {
     "node": "12.4.0",
